@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+	<view-state id="viewCart" view="/shoping/viewCart">
+		<transition on="submit" to="viewOrder" />
+	</view-state>
+	
+	<view-state id="viewOrder" view="/shoping/viewOrder">
+		<transition on="confirm" to="orderConfirmed" />
+	</view-state>
+	
+	<view-state id="orderConfirmed" view="/shoping/orderConfirmed">
+		<transition on="returnToIndex" to="returnToIndex" />
+	</view-state>
+	
+	<end-state id="returnToIndex" view="externalRedirect:servletRelative:/index.jsp"/>
+		
+</flow>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcatProjectProperties>
+    <rootDir>/src/main/webapp</rootDir>
+    <exportSource>false</exportSource>
+    <reloadable>false</reloadable>
+    <redirectLogger>false</redirectLogger>
+    <updateXml>true</updateXml>
+    <warLocation></warLocation>
+    <extraInfo></extraInfo>
+    <webPath></webPath>
+    <visitJarWebXml>true</visitJarWebXml>
+    <visitJarFile>true</visitJarFile>
+    <overridePattern></overridePattern>
+    <addPattern></addPattern>
+    <usePrefix>true</usePrefix>
+    <webClassPathEntries>
+        <webClassPathEntry>/wf-plugin-spring-webflow/target/classes</webClassPathEntry>
+        <webClassPathEntry>/wf-plugin-spring-webflow/target/test-classes</webClassPathEntry>
+        <webClassPathEntry>org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER</webClassPathEntry>
+    </webClassPathEntries>
+</tomcatProjectProperties>
